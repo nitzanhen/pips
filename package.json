@@ -22,13 +22,25 @@
   "repository": "https://github.com/NitzanHen/pips.git",
   "scripts": {
     "dev": "rollup -c rollup.config.js --watch",
-    "build": "rimraf dist && rollup -c rollup.config.js"
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "lint": "eslint src"
   },
   "devDependencies": {
+    "@rollup/plugin-eslint": "^8.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.79.0",
     "rollup-plugin-ts": "^3.0.2",
     "typescript": "^4.8.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "pipe",
+    "functional programming"
+  ]
 }
