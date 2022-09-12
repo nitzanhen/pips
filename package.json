@@ -20,6 +20,10 @@
     "dist"
   ],
   "repository": "https://github.com/NitzanHen/pips.git",
+  "bugs": {
+    "url": "https://github.com/NitzanHen/pips/issues"
+  },
+  "homepage": "https://github.com/NitzanHen/pips",
   "scripts": {
     "dev": "rollup -c rollup.config.js --watch",
     "build": "rimraf dist && rollup -c rollup.config.js",
@@ -38,6 +42,7 @@
     "typescript": "^4.8.3"
   },
   "license": "MIT",
+  "sideEffects": false,
   "keywords": [
     "typescript",
     "pipe",
