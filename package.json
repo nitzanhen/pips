@@ -25,12 +25,13 @@
   },
   "homepage": "https://github.com/NitzanHen/pips",
   "scripts": {
-    "dev": "rollup -c rollup.config.js --watch",
-    "build": "rimraf dist && rollup -c rollup.config.js",
-    "lint": "eslint src"
+    "dev": "rollup -c rollup.config.mjs --watch",
+    "build": "rimraf dist && rollup -c rollup.config.mjs",
+    "lint": "eslint src",
+    "test": "node test/test.mjs",
+    "smoke": "yarn lint && yarn build && yarn test"
   },
   "devDependencies": {
-    "@rollup/plugin-eslint": "^8.0.2",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
     "eslint": "^8.23.1",

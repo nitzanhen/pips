@@ -1,9 +1,12 @@
-import { join } from 'path';
+import { dirname, join } from 'path';
+import { fileURLToPath } from 'url';
 import { defineConfig } from 'rollup';
 import ts from 'rollup-plugin-ts';
 
-const src = join(__dirname, 'src');
-const dist = join(__dirname, 'dist');
+const dir = dirname(fileURLToPath(import.meta.url));
+
+const src = join(dir, 'src');
+const dist = join(dir, 'dist');
 
 export default defineConfig([
   {
