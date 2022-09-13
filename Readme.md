@@ -30,7 +30,10 @@
 
 ```ts
 const farenheit = 50;
-const celsius = pipe(farenheit)((f) => f - 32)((f) => (f * 5) / 9)();
+const celsius = pipe(farenheit)
+    ((f) => f - 32)
+    ((f) => (f * 5) / 9)
+  ();
 
 console.log(celsius); // 10
 
