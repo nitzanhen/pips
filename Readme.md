@@ -1,12 +1,9 @@
 <h1 align="center">Pips</h1>
 
 <p align="center">
-  A tiny library for declarative, type-safe, elegant pipes
+  A tiny library for declarative, type-safe, elegant pipes.
 </p>
 
-<center>
-  <pre align="center"><code align="center">npm install pips / yarn add pips / pnpm add pips</code></pre>
-</center>
 
 
 <p align="center">
@@ -27,6 +24,10 @@
 <hr/>
 
 <br/>
+
+<pre>
+  <code>npm install pips / yarn add pips / pnpm add pips</code>
+</pre>
 
 ```ts
 const farenheit = 50;
