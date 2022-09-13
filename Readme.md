@@ -71,7 +71,7 @@ console.log(noOdds2); // { b: 2, d: 4 };
 
 ## API
 
-Pips exposes a single function `pipe` that creates a `Pipe`, which you can think of as some sort of box. You can give this box a value, e.g. `pipe(x)`, and it'll hold it, or create an "empty" box with `pipe()`. 
+Pips exposes a single function `pipe` that creates a `Pipe`, which you can think of as some sort of box. You can give this box a valu (e.g. `pipe(x)`) and it'll hold it, or create an "empty" box with `pipe()`. 
 
 This box can then be given functions one after another, each of which transform what's inside it. <br>
 
