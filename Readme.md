@@ -4,9 +4,10 @@
   A tiny library for declarative, type-safe, elegant pipes
 </p>
 
-<pre align="center">
-  <code align="center">npm install pips / yarn add pips / pnpm add pips</code>
-</pre>
+<center>
+  <pre align="center"><code align="center">npm install pips / yarn add pips / pnpm add pips</code></pre>
+</center>
+
 
 <p align="center">
   <a href="https://www.npmjs.com/package/pips">
