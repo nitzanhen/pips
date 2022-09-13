@@ -5,7 +5,7 @@
 </p>
 
 <pre align="center">
-  <code>npm install pips / yarn add pips / pnpm add pips</code>
+  <code align="center">npm install pips / yarn add pips / pnpm add pips</code>
 </pre>
 
 <p align="center">
