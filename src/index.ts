@@ -34,3 +34,6 @@ export interface PipeFactory {
 export const pipe = (<T>(x: T) => (
     <S>(fn?: (x: T) => S) => fn ? pipe(fn(x)) : x
   )) as PipeFactory;
+
+
+  

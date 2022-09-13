@@ -31,8 +31,8 @@
 ```ts
 const farenheit = 50;
 const celsius = pipe(farenheit)
-    ((f) => f - 32)
-    ((f) => (f * 5) / 9)
+    (f => f - 32)
+    (f => (f * 5) / 9)
   ();
 
 console.log(celsius); // 10
@@ -40,9 +40,9 @@ console.log(celsius); // 10
 // Code is presented forwards, not backwards, making it clearer:
 const obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
 const noOdds = pipe(obj)
-    ((obj) => Object.entries(obj))
-    ((ents) => ents.filter(([k, v]) => v % 2 === 0))
-    ((evens) => Object.fromEntries(enens))
+    (obj => Object.entries(obj))
+    (ents => ents.filter(([k, v]) => v % 2 === 0))
+    (evens => Object.fromEntries(enens))
   ();
 
 console.log(noOdds); // { b: 2, d: 4 };
@@ -68,7 +68,6 @@ console.log(noOdds2); // { b: 2, d: 4 };
 - Write code as humans think - forwards, not backwards.
 - Declarative, elegant, clear code
 - Expressing using Expressions
-- Eliminate gray syntax (`for(;;)`)
 - Seriously tiny footprint, in size and runtime.
 
 ## How does it work
