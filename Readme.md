@@ -60,7 +60,6 @@ const noOdds2 = pipe(obj)
 console.log(noOdds2); // { b: 2, d: 4 };
 ```
 
-
 ## The why
 
 ### Features
@@ -70,19 +69,16 @@ console.log(noOdds2); // { b: 2, d: 4 };
 - Expressing using Expressions
 - Seriously tiny footprint, in size and runtime.
 
-## How does it work
-
-**_✨ [magic](src/index.ts) ✨_**
-
 ## API
 
-Pips exposes a single function `pipe`. It has two signatures:
+Pips exposes a single function `pipe` that creates a `Pipe`, which you can think of as some sort of box. You can give this box a value, e.g. `pipe(x)`, and it'll hold it, or create an "empty" box with `pipe()`. 
 
-The first and standard one is `pipe(x)` where x can be just about anything. <br/>
-The second, `pipe()`, can be occassionally useful in terms of code style.
-
-Both with create a `Pipe`, which you can think of as a sort of box. <br/>
 This box can then be given functions one after another, each of which transform what's inside it. <br>
-Finally, when the calculation is complete, we "call" the box with no arguments - `()` - to get the final value from inside it.
+
+Finally, when our computation is complete, we can get the value inside the box back by calling it with no arguments - `()`.
 
 Complete signatures can be found in the library's very short [source code](src/index.ts), if you're into that sort of thing.
+
+## How is it implemented?
+
+**_✨ [magic](src/index.ts) ✨_**
