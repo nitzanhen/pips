@@ -36,18 +36,24 @@ const celsius = pipe(farenheit)
   ();
 
 console.log(celsius); // 10
+```
 
-// Code is presented forwards, not backwards, making it clearer:
+```ts
+// Code is presented forwards, not backwards, making it clearer
+
 const obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
 const noOdds = pipe(obj)
-    (obj => Object.entries(obj))
-    (ents => ents.filter(([k, v]) => v % 2 === 0))
-    (evens => Object.fromEntries(enens))
+    (it => Object.entries(it))
+    (it => it.filter(([k, v]) => v % 2 === 0))
+    (it => Object.fromEntries(it))
   ();
 
 console.log(noOdds); // { b: 2, d: 4 };
+```
 
-// Make it even better with FP utility libs such as rhax, lodash or ramda:
+```ts
+// Make it even better with FP utility libs such as rhax, lodash or ramda
+
 import { entries, filter, toObject } from "rhax";
 
 const obj2 = { a: 1, b: 2, c: 3, d: 4, e: 5 };
